@@ -1,0 +1,16 @@
+p{
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+}
+
+
+a:link{
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+a:visited{
+    color:darkblue;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 2 integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" 3 crossorigin="anonymous">
+    </script>
+    <script src="LC-Lightbox-LITE-master/js/lc_lightbox.lite.js"></script>
+    <script src="LC-Lightbox-LITE-master/js/alloy_finger.min.js"></script>
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master/css/lc_lightbox.css">
+    <!-- dark -->
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master/skins/dark.css">
+
+    <!-- light -->
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master/skins/light.css">
+
+    <!-- minimal -->
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master/skins/minimal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a class="elem" href="images/tree-736885__480.webp" title="image 1" data-lcl-txt="Description 1" data-lcl-author="Author 1" data-lcl-thumb="thumb1.jpg"><img src="images/tree-736885__480.webp" alt="tree"></a>
+
+    <a class="elem" href="images/photo-1527960669566-f882ba85a4c6.jfif" title="image 2" data-lcl-txt="Description 2" data-lcl-author="Author 2" data-lcl-thumb="thumb2.jpg"><img src="images/photo-1527960669566-f882ba85a4c6.jfif" alt="hand"></a>
+
+    <a class="elem" href="images/tree-736885__480.webp" title="image 3" data-lcl-txt="Description 3" data-lcl-author="Author 3" data-lcl-thumb="thumb3.jpg"><img src="images/tree-736885__480.webp" alt="tree"></a>
+    <script>
+        lc_lightbox('.elem', {
+            wrap_class: 'lcl_fade_oc',
+            gallery: true,
+            thumb_attr: 'data-lcl-thumb',
+            skin: 'minimal',
+            live_elements: true,
+            fullscreen: false,
+            gallery_hook: 'rel',
+            shadow: true,
+            autoplay: true,
+            animation_time: 200
+
+            // more options here
+        });
+    </script>
+</body>
+
+</html>

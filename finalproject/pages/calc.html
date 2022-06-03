@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../kalkylatorer/birth.js"></script>
+    <title>Tillväxtkurvor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Svenska intrauterina tillväxtkurvor för foster och barn</h1>
+        <img src="../images/Lisa_beskuren.jpg" alt="Gravid kvinna">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="./about.html">Om projektet</a></li>
+                <li><a href="#">Kalkylator</a></li>
+                <li><a href="./curves.html">Tillväxtkurvor</a></li>
+                <li><a href="./tables.html">Tabeller</a></li>
+                <li><a href="./codes.html">Syntax</a></li>
+                <li><a href="./publications.html">Publikationer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="ultrasound">
+        <div class="header">
+            <h2>Ultraljudskalkylatorer</h2>
+            <p>Med dessa kalkylatorer kan du räkna ut graviditetslängd utifrån beräknad förlossningsdag samt avvikelsen från förväntad fostervikt, biparietal diameter (BPD), huvudcirkumferens (HC), medelabdominell diameter (MAD), abdominell cirkumferens
+                (AC) och femurlängd (FL). Avvikelsen ges i standarddeviationer och percentiler.</p>
+        </div>
+    </section>
+    <section id="length">
+        <h2>Beräkning av graviditetslängder</h2>
+        <p>Kalkylator som räknar ut det som inte skrivits in. Om till exempel beräknad partus och dagens datum skrivits in kommer programmet räkna ut hur länge fostret legat i magen (graviditetslängd)</p>
+        <input type="text" name="EDD" id="EDD" placeholder="beräknad partus (yyyy mm dd)">
+        <input type="text" name="fd" id="fd" placeholder="dagens datum (yyyy mm dd)">
+        <input type="text" name="pregnancy" id="preg" placeholder="graviditetslängd (vecka + dagar)">
+        <input type="button" value="Calculate" onclick=calculate() id="button">
+        <output id="output"></output>
+    </section>
+    <section id="excel">
+        <h2>Andra kalkylatorer</h2>
+        <h3>Skattad fostervikt</h3>
+        <div class="container">
+            <a href="../kalkylatorer/Kalkylator_EFW_könsneutral.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/Kalkylator_EFW_flickor.xlsx">Flickor</a>
+            <a href="../kalkylatorer/Kalkylator_EFW_pojkar.xlsx">Pojkar</a>
+        </div>
+        <h3>BPD</h3>
+        <div class="container">
+            <a href="../kalkylatorer/BPD_males_and_females_calculator_2021Dec21.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/BPD_Females_calculator_2021Dec21.xlsx">Flickor</a>
+            <a href="../kalkylatorer/BPD_Males_calculator_2021Dec21.xlsx">Pojkar</a>
+        </div>
+        <h3>HC</h3>
+        <div class="container">
+            <a href="../kalkylatorer/HC_males_and_females_calculator_2021Dec21.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/HC_Females_calculator_2021Dec21.xlsx">Flickor</a>
+            <a href="../kalkylatorer/HC_Males_calculator_2021Dec21.xlsx">Pojkar</a>
+        </div>
+        <h3>MAD</h3>
+        <div class="container">
+            <a href="../kalkylatorer/MAD_males_and_females_calculator_2021Dec21.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/MAD_Females_calculator_2021Dec21.xlsx">Flickor</a>
+            <a href="../kalkylatorer/MAD_Males_calculator_2021Dec21.xlsx">Pojkar</a>
+        </div>
+        <h3>AC</h3>
+        <div class="container">
+            <a href="../kalkylatorer/AC_males_and_females_calculator_2021Dec21.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/AC_Females_calculator_2021Dec21.xlsx">Flickor</a>
+            <a href="../kalkylatorer/AC_Males_calculator_2021Dec21.xlsx">Pojkar</a>
+        </div>
+        <h3>FL</h3>
+        <div class="container">
+            <a href="../kalkylatorer/FL_males_and_females_calculator_2021Dec21.xlsx">Könsneutral</a>
+            <a href="../kalkylatorer/FL_Females_calculator_2021Dec21.xlsx">Flickor</a>
+            <a href="../kalkylatorer/FL_Males_calculator_2021Dec21.xlsx">Pojkar</a>
+        </div>
+    </section>
+</body>
+
+</html>

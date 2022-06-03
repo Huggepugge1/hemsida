@@ -1,0 +1,90 @@
+* {
+    background-color: #eaeaea;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+#header {
+    width: 100%;
+    height: min-content;
+    top: 0;
+}
+
+#header>h1 {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navigation-btn {
+    border-radius: 100000px;
+    background: transparent;
+    padding: 1rem 0.5rem;
+    border: 2px solid rgb(53, 53, 53);
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    transition: background 300ms ease-in-out;
+}
+
+.navigation-btn:hover {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 10000%;
+    animation: rgb 10s linear infinite;
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+#html-exercises {
+    display: grid;
+    gap: 1em;
+}
+
+#html-exercises>h2 {
+    grid-column: span 5;
+    text-align: center;
+}
+
+#photoshop-exercises {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#photoshop-exercises>h2 {
+    grid-column: span 5;
+    text-align: center;
+}
+
+.exerciseButton {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    background-color: transparent;
+    border: 1.5px solid orange;
+    transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
+    border-radius: 5000000000000px;
+}
+
+.exerciseButton:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+}
